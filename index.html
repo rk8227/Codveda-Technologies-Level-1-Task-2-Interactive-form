@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interactive form</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>User Registration form</h2>
+        <form id="userForm" novalidate>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name"
+            required />
+            <span class="error" id="nameError"></span>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email"required />
+            <span class="error" id="emailError"></span>
+
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone"required />
+            <span class="error" id="phoneError"></span>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password"required />
+            <span class="error"
+            id="passwordError"></span>
+
+            <button type="submit">Submit</button>      
+        </form>
+
+        <p class="success" id="successMsg"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
